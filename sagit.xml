@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="ns"
+        fetch="https://github.com/Nitrogen-sagit"
+        sync-j="16" />
+
+    <remote name="wloot"
+        fetch="https://github.com/wloot"
+        sync-j="16" />
+
+    <remote name="gitlabwloot"
+        fetch="https://gitlab.com/wlootlxt123"
+        sync-j="16" />
+
+  <remove-project name="android_vendor_qcom_opensource_dataservices" />
+  <remove-project name="android_vendor_qcom_opensource_interfaces" />
+  <remove-project name="android_vendor_qcom_opensource_dpm" />
+  <remove-project name="android_vendor_qcom_opensource_audio" />
+  <remove-project name="android_vendor_codeaurora_telephony" />
+  
+  <remove-project name="android_device_oneplus_oneplus3" />
+  <remove-project name="proprietary_vendor_oneplus" />
+  <remove-project name="android_kernel_oneplus_msm8996" />
+  <remove-project name="android_hardware_qcom_audio-caf-msm8996" />
+  <remove-project name="android_hardware_qcom_display-caf-msm8996" />
+  <remove-project name="android_hardware_qcom_media-caf-msm8996" />
+  
+  <remove-project name="android_hardware_qcom_audio-caf-msm8998" />
+  <remove-project name="android_hardware_qcom_media-caf-msm8998" />
+  <remove-project name="android_hardware_qcom_display-caf-msm8998" />
+  <remove-project name="android_hardware_qcom_wlan" />
+  
+  <remove-project name="android_packages_apps_Launcher3" />
+  <remove-project name="platform/packages/apps/ExactCalculator" />
+  <remove-project name="platform/packages/apps/Email" />
+  <remove-project name="platform/packages/apps/Camera2" />
+  <remove-project name="platform/packages/apps/Gallery2" />
+
+  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+
+    <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
+    <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
+    <project path="vendor/xiaomi" name="vendor_xiaomi" remote="wloot" revision="pie" />
+    <project path="kernel/xiaomi/msm8998" name="wight554/chiron" remote="github" revision="pie" />
+    <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
+
+    <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" remote="gitlabwloot" revision="pie" />
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="ns" revision="pie" />
+
+    <project path="hardware/qcom/audio-caf-msm8998" name="hardware_qcom_audio-caf-msm8998" remote="ns" revision="pie" />
+    <project path="hardware/qcom/media-caf-msm8998" name="hardware_qcom_media-caf-msm8998" remote="ns" revision="pie" />
+    <project path="hardware/qcom/display-caf-msm8998" name="hardware_qcom_display-caf-msm8998" remote="ns" revision="pie" />
+    <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="ns" revision="pie" />
+    <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="ns" revision="pie" />
+    <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="ns" revision="pie" />
+    <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="ns" revision="pie" />
+    <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="ns" revision="pie" />
+    <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="ns" revision="pie" />
+
+</manifest>
