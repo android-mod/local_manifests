@@ -58,8 +58,10 @@
     <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="ns" revision="pie" />
     <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="ns" revision="pie" />
 
-
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
+
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
 
 </manifest>
