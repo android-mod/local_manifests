@@ -38,7 +38,6 @@
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/jdk/jdk9" />
   <remove-project name="platform/prebuilts/r8" />
 
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
@@ -49,9 +48,8 @@
 
     <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" remote="gitlabwloot" revision="pie" />
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
-    <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/r8" name="platform/prebuilts/r8" groups="pdk" clone-depth="1" revision="master" />
-  
+
     <project path="hardware/qcom/audio-caf-msm8998" name="hardware_qcom_audio-caf-msm8998" remote="ns" revision="pie" />
     <project path="hardware/qcom/media-caf-msm8998" name="hardware_qcom_media-caf-msm8998" remote="ns" revision="pie" />
     <project path="hardware/qcom/display-caf-msm8998" name="hardware_qcom_display-caf-msm8998" remote="ns" revision="pie" />
