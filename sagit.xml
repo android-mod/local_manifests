@@ -40,6 +40,9 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/r8" />
 
+  <remove-project name="android_system_sepolicy" />
+  <remove-project name="android_device_qcom_sepolicy" />
+
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
     <project path="vendor/xiaomi" name="vendor_xiaomi" remote="wloot" revision="pie" />
@@ -65,5 +68,8 @@
 
   <remove-project name="android_frameworks_base" />
   <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
+  
+  <project path="system/sepolicy" name="system_sepolicy" remote="ns" revision="pie" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ns" revision="pie" />
 
 </manifest>
