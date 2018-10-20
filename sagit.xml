@@ -35,6 +35,7 @@
   <remove-project name="platform/packages/apps/Email" />
   <remove-project name="platform/packages/apps/Camera2" />
   <remove-project name="platform/packages/apps/Gallery2" />
+  <remove-project name="platform/packages/apps/Messaging" />
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
@@ -69,5 +70,7 @@
   
   <project path="system/sepolicy" name="system_sepolicy" remote="ns" revision="pie" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ns" revision="pie" />
+
+  <project path="packages/apps/Messaging" name="LineageOS/android_packages_apps_Messaging" remote="github" revision="lineage-16.0" />
 
 </manifest>
