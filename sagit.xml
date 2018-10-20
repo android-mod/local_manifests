@@ -71,6 +71,6 @@
   <project path="system/sepolicy" name="system_sepolicy" remote="ns" revision="pie" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ns" revision="pie" />
 
-  <project path="packages/apps/Messaging" name="LineageOS/android_packages_apps_Messaging" remote="github" revision="lineage-16.0" />
+  <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
 
 </manifest>
