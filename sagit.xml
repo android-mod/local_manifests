@@ -96,7 +96,7 @@
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" remote="github" revision="9.0" />
   <project path="external/libpng" name="crdroidandroid/android_external_libpng" remote="github" revision="9.0" />
   <project path="external/skia" name="crdroidandroid/android_external_skia" remote="github" revision="9.0" />
-  <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" remote="github" revision="9.0" />
+  <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
 
   <project path="libcore" name="crdroidandroid/android_libcore" remote="github" revision="9.0" />
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
