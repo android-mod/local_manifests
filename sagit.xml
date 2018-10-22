@@ -39,9 +39,22 @@
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/jdk/jdk9" />
+  <remove-project name="platform/prebuilts/r8" />
 
   <remove-project name="android_system_sepolicy" />
   <remove-project name="android_device_qcom_sepolicy" />
+
+  <remove-project name="platform/external/expat" />
+  <remove-project name="platform/external/freetype" />
+  <remove-project name="platform/external/jemalloc" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <remove-project name="platform/external/libpng" />
+  <remove-project name="platform/external/skia" />
+  <remove-project name="platform/external/sqlite" />
+
+  <remove-project name="platform/libcore" />
+  <remove-project name="android_bionic" />
 
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
@@ -51,7 +64,9 @@
 
     <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" remote="gitlabwloot" revision="pie" />
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
-
+    <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
+    <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
+  
     <project path="hardware/qcom/audio-caf-msm8998" name="hardware_qcom_audio-caf-msm8998" remote="ns" revision="pie" />
     <project path="hardware/qcom/media-caf-msm8998" name="hardware_qcom_media-caf-msm8998" remote="ns" revision="pie" />
     <project path="hardware/qcom/display-caf-msm8998" name="hardware_qcom_display-caf-msm8998" remote="ns" revision="pie" />
@@ -72,5 +87,16 @@
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ns" revision="pie" />
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
+
+  <project path="external/expat" name="crdroidandroid/android_external_expat" remote="github" revision="9.0" />
+  <project path="external/freetype" name="crdroidandroid/android_external_freetype" remote="github" revision="9.0" />
+  <project path="external/jemalloc" name="crdroidandroid/android_external_jemalloc" remote="github" revision="9.0" />
+  <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" remote="github" revision="9.0" />
+  <project path="external/libpng" name="crdroidandroid/android_external_libpng" remote="github" revision="9.0" />
+  <project path="external/skia" name="crdroidandroid/android_external_skia" remote="github" revision="9.0" />
+  <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" remote="github" revision="9.0" />
+
+  <project path="libcore" name="crdroidandroid/android_libcore" remote="github" revision="9.0" />
+  <project path="bionic" name="bionic" remote="ns" revision="pie" />
 
 </manifest>
