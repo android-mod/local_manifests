@@ -41,6 +41,7 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/jdk/jdk9" />
   <remove-project name="platform/prebuilts/r8" />
+  <remove-project name="android_prebuilts_build-tools" />
 
   <remove-project name="android_system_sepolicy" />
   <remove-project name="android_device_qcom_sepolicy" />
@@ -66,7 +67,8 @@
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
     <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
-  
+    <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" remote="github" clone-depth="1" revision="ninezero" />
+
     <project path="hardware/qcom/audio-caf-msm8998" name="hardware_qcom_audio-caf-msm8998" remote="ns" revision="pie" />
     <project path="hardware/qcom/media-caf-msm8998" name="hardware_qcom_media-caf-msm8998" remote="ns" revision="pie" />
     <project path="hardware/qcom/display-caf-msm8998" name="hardware_qcom_display-caf-msm8998" remote="ns" revision="pie" />
