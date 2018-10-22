@@ -53,6 +53,7 @@
   <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/external/chromium-webview" />
 
   <remove-project name="platform/libcore" />
   <remove-project name="android_bionic" />
@@ -97,6 +98,7 @@
   <project path="external/libpng" name="crdroidandroid/android_external_libpng" remote="github" revision="9.0" />
   <project path="external/skia" name="crdroidandroid/android_external_skia" remote="github" revision="9.0" />
   <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
+  <project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" clone-depth="1" remote="github" revision="lineage-15.1" />
 
   <project path="libcore" name="crdroidandroid/android_libcore" remote="github" revision="9.0" />
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
