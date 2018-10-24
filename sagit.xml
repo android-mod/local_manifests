@@ -17,7 +17,8 @@
   <remove-project name="android_vendor_qcom_opensource_dpm" />
   <remove-project name="android_vendor_qcom_opensource_audio" />
   <remove-project name="android_vendor_codeaurora_telephony" />
-  
+  <remove-project name="android_vendor_nitrogen" />
+
   <remove-project name="android_device_oneplus_oneplus3" />
   <remove-project name="proprietary_vendor_oneplus" />
   <remove-project name="android_kernel_oneplus_msm8996" />
@@ -40,7 +41,7 @@
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/jdk/jdk9" />
-  <remove-project name="platform/prebuilts/r8" />
+  <!--remove-project name="platform/prebuilts/r8" /-->
   <remove-project name="android_prebuilts_build-tools" />
 
   <remove-project name="android_system_sepolicy" />
@@ -67,7 +68,7 @@
     <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" remote="gitlabwloot" revision="pie" />
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
     <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
-    <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
+    <!--project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" /-->
     <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" remote="github" clone-depth="1" revision="ninezero" />
 
     <project path="hardware/qcom/audio-caf-msm8998" name="hardware_qcom_audio-caf-msm8998" remote="ns" revision="pie" />
@@ -79,6 +80,8 @@
     <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="ns" revision="pie" />
     <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="ns" revision="pie" />
     <!--project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="ns" revision="pie" /-->
+
+    <project path="vendor/nitrogen" name="vendor_nitrogen" remote="ns" revision="pie" />
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
