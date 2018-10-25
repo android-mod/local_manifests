@@ -102,7 +102,7 @@
   <project path="external/jemalloc" name="crdroidandroid/android_external_jemalloc" remote="github" revision="9.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" remote="github" revision="9.0" />
   <project path="external/libpng" name="crdroidandroid/android_external_libpng" remote="github" revision="9.0" />
-  <project path="external/skia" name="crdroidandroid/android_external_skia" remote="github" revision="9.0" />
+  <project path="external/skia" name="external_skia" remote="ns" revision="pie" />
   <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
   <project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" clone-depth="1" remote="github" revision="lineage-15.1" />
 
