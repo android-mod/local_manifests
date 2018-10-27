@@ -67,7 +67,8 @@
     <project path="kernel/xiaomi/msm8998" name="wight554/chiron" remote="github" revision="pie" />
     <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
 
-    <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" remote="gitlabwloot" revision="pie" />
+    <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" clone-depth="1" remote="gitlabwloot" revision="pie" />
+    <project path="prebuilts/clang/host/linux-x86/clang-master" name="clang" clone-depth="1" remote="wloot" revision="master" />    
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
     <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <!--project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" /-->
