@@ -59,7 +59,19 @@
   <remove-project name="android_bionic" />
 
   <remove-project name="android_frameworks_base" />
-  <remove-project name="android_frameworks_native" />  
+  <remove-project name="android_frameworks_native" />
+ 
+  <remove-project name="android_build_make" />  
+
+    <project path="build/make" name="build_make" remote="ns" revision="p" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
 
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
