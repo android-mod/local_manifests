@@ -12,11 +12,6 @@
         fetch="https://gitlab.com/wlootlxt123"
         sync-j="16" />
 
-  <remove-project name="android_vendor_qcom_opensource_dataservices" />
-  <remove-project name="android_vendor_qcom_opensource_interfaces" />
-  <remove-project name="android_vendor_qcom_opensource_dpm" />
-  <remove-project name="android_vendor_qcom_opensource_audio" />
-  <remove-project name="android_vendor_codeaurora_telephony" />
   <remove-project name="android_vendor_nitrogen" />
 
   <remove-project name="android_device_oneplus_oneplus3" />
@@ -25,11 +20,6 @@
   <remove-project name="android_hardware_qcom_audio-caf-msm8996" />
   <remove-project name="android_hardware_qcom_display-caf-msm8996" />
   <remove-project name="android_hardware_qcom_media-caf-msm8996" />
-  
-  <remove-project name="android_hardware_qcom_audio-caf-msm8998" />
-  <remove-project name="android_hardware_qcom_media-caf-msm8998" />
-  <remove-project name="android_hardware_qcom_display-caf-msm8998" />
-  <!--remove-project name="android_hardware_qcom_wlan" /-->
 
   <remove-project name="platform/packages/apps/ExactCalculator" />
   <remove-project name="platform/packages/apps/Email" />
@@ -40,7 +30,6 @@
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/jdk/jdk9" />
-  <!--remove-project name="platform/prebuilts/r8" /-->
   <remove-project name="android_prebuilts_build-tools" />
 
   <remove-project name="android_system_sepolicy" />
@@ -58,20 +47,7 @@
   <remove-project name="platform/libcore" />
   <remove-project name="android_bionic" />
 
-  <remove-project name="android_frameworks_base" />
   <remove-project name="android_frameworks_native" />
- 
-  <remove-project name="android_build_make" />  
-
-    <project path="build/make" name="build_make" remote="ns" revision="p" >
-        <copyfile src="core/root.mk" dest="Makefile" />
-        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-        <linkfile src="core" dest="build/core" />
-        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-        <linkfile src="target" dest="build/target" />
-        <linkfile src="tools" dest="build/tools" />
-    </project>
 
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
@@ -83,25 +59,12 @@
     <project path="prebuilts/clang/host/linux-x86/clang-master" name="clang" clone-depth="1" remote="wloot" revision="master" />    
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
     <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
-    <!--project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" /-->
-    <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" remote="github" clone-depth="1" revision="ninezero" />
-
-    <project path="hardware/qcom/audio-caf-msm8998" name="hardware_qcom_audio-caf-msm8998" remote="ns" revision="pie" />
-    <project path="hardware/qcom/media-caf-msm8998" name="hardware_qcom_media-caf-msm8998" remote="ns" revision="pie" />
-    <project path="hardware/qcom/display-caf-msm8998" name="hardware_qcom_display-caf-msm8998" remote="ns" revision="pie" />
-    <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="ns" revision="pie" />
-    <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="ns" revision="pie" />
-    <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="ns" revision="pie" />
-    <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="ns" revision="pie" />
-    <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="ns" revision="pie" />
-    <!--project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="ns" revision="pie" /-->
+    <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="master" />
 
     <project path="vendor/nitrogen" name="vendor_nitrogen" remote="ns" revision="pie" />
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
-
-  <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
   <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
 
   <project path="system/sepolicy" name="system_sepolicy" remote="ns" revision="pie" />
