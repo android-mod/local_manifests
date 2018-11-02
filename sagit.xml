@@ -28,8 +28,6 @@
   <remove-project name="platform/packages/apps/Messaging" />
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/jdk/jdk9" />
   <remove-project name="android_prebuilts_build-tools" />
 
   <remove-project name="android_system_sepolicy" />
@@ -47,8 +45,6 @@
   <remove-project name="platform/libcore" />
   <remove-project name="android_bionic" />
 
-  <remove-project name="android_frameworks_native" />
-
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
     <project path="vendor/xiaomi" name="vendor_xiaomi" remote="wloot" revision="pie" />
@@ -57,15 +53,12 @@
 
     <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" clone-depth="1" remote="gitlabwloot" revision="pie" />
     <project path="prebuilts/clang/host/linux-x86/clang-master" name="clang" clone-depth="1" remote="wloot" revision="master" />    
-    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
-    <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="master" />
 
     <project path="vendor/nitrogen" name="vendor_nitrogen" remote="ns" revision="pie" />
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
-  <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
 
   <project path="system/sepolicy" name="system_sepolicy" remote="ns" revision="pie" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ns" revision="pie" />
@@ -84,5 +77,4 @@
 
   <project path="libcore" name="crdroidandroid/android_libcore" remote="github" revision="9.0" />
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
-
 </manifest>
