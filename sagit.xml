@@ -84,6 +84,6 @@
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
   
    <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
-   <project path="frameworks/av" name="frameworks_native" remote="ns" revision="p" />
+   <project path="frameworks/av" name="frameworks_av" remote="ns" revision="p" />
    <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
 </manifest>
