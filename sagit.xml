@@ -30,9 +30,6 @@
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="android_prebuilts_build-tools" />
 
-  <remove-project name="android_system_sepolicy" />
-  <remove-project name="android_device_qcom_sepolicy" />
-
   <remove-project name="platform/external/expat" />
   <remove-project name="platform/external/freetype" />
   <remove-project name="platform/external/jemalloc" />
@@ -59,9 +56,6 @@
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
-
-  <project path="system/sepolicy" name="system_sepolicy" remote="ns" revision="pie" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ns" revision="pie" />
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
 
