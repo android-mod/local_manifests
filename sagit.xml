@@ -62,7 +62,7 @@
     <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
 
     <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" clone-depth="1" remote="gitlabwloot" revision="pie" />
-    <project path="prebuilts/clang/host/linux-x86/clang-master" name="clang" clone-depth="1" remote="wloot" revision="master" />    
+    <project path="prebuilts/clang/host/linux-x86/clang-r344140" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5058415" clone-depth="1" remote="github" revision="9.0" />    
     <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="master" />
  
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
@@ -70,10 +70,10 @@
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
 
-  <project path="external/expat" name="crdroidandroid/android_external_expat" remote="github" revision="9.0" />
-  <project path="external/freetype" name="crdroidandroid/android_external_freetype" remote="github" revision="9.0" />
+  <project path="external/expat" name="BenzoRom/external_expat" remote="github" revision="ninezero" />
+  <project path="external/freetype" name="BenzoRom/external_freetype" remote="github" revision="ninezero" />
   <project path="external/jemalloc" name="crdroidandroid/android_external_jemalloc" remote="github" revision="9.0" />
-  <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" remote="github" revision="9.0" />
+  <project path="external/libjpeg-turbo" name="BenzoRom/external_libjpeg-turbo" remote="github" revision="ninezero" />
   <project path="external/libpng" name="crdroidandroid/android_external_libpng" remote="github" revision="9.0" />
   <project path="external/skia" name="external_skia" remote="ns" revision="pie" />
   <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
