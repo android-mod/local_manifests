@@ -67,6 +67,7 @@
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
+  <project path="packages/apps/OpenDelta" name="packages_apps_OpenDelta" remote="ns" revision="pie" />
 
   <project path="external/expat" name="BenzoRom/external_expat" remote="github" revision="ninezero" />
   <project path="external/freetype" name="BenzoRom/external_freetype" remote="github" revision="ninezero" />
