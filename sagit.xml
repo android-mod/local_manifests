@@ -25,6 +25,8 @@
   <remove-project name="platform/packages/apps/Messaging" />
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/jdk/jdk9" />
   <remove-project name="android_prebuilts_build-tools" />
 
   <remove-project name="platform/external/expat" />
@@ -61,7 +63,9 @@
     <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
 
     <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" clone-depth="1" remote="gitlabwloot" revision="pie" />
-    <project path="prebuilts/clang/host/linux-x86/clang-r344140" name="1582130940/android_prebuilts_clang_host_linux-x86_clang-r344140" clone-depth="1" remote="github" revision="8.1" />    
+    <project path="prebuilts/clang/host/linux-x86/clang-r344140" name="1582130940/android_prebuilts_clang_host_linux-x86_clang-r344140" clone-depth="1" remote="github" revision="8.1" />
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
+    <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="master" />
  
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
