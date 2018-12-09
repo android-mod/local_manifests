@@ -28,6 +28,7 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/jdk/jdk9" />
   <remove-project name="android_prebuilts_build-tools" />
+  <remove-project name="platform/prebuilts/r8" />
 
   <remove-project name="platform/external/expat" />
   <remove-project name="platform/external/freetype" />
@@ -45,7 +46,8 @@
   <remove-project name="android_frameworks_base" />
 
   <remove-project name="android_build_make" />
-
+  <remove-project name="platform/build/kati" />
+  
     <project path="build/make" name="build_make" remote="ns" revision="p" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -55,6 +57,7 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
+   <project path="build/kati" name="build_kati" remote="ns" revision="ninezero" />
 
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
@@ -67,7 +70,8 @@
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="master" />
     <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" clone-depth="1" remote="github" revision="ninezero" />
- 
+    <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
+
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
 
