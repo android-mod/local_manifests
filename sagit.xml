@@ -28,6 +28,7 @@
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Stk" />
   <remove-project name="android_packages_apps_Updates" />  
+  <remove-project name="platform/packages/providers/DownloadProvider" />  
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
@@ -86,6 +87,7 @@
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
   <project path="packages/apps/OpenDelta" name="packages_apps_OpenDelta" remote="ns" revision="pie" />
+  <project path="packages/providers/DownloadProvider" name="DirtyUnicorns/android_packages_providers_DownloadProvider" remote="github" revision="p9x" />
 
   <project path="external/expat" name="BenzoRom/external_expat" remote="github" revision="ninezero" />
   <project path="external/freetype" name="BenzoRom/external_freetype" remote="github" revision="ninezero" />
