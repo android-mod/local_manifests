@@ -49,6 +49,7 @@
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/zlib" />
   <remove-project name="platform/external/turbine" />
+  <remove-project name="platform/external/vixl" />
 
   <remove-project name="android_bionic" />
   
@@ -112,6 +113,7 @@
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ns" revision="ninezero" />
   <project path="external/zlib" name="external_zlib" remote="ns" revision="ninezero" />
   <project path="external/turbine" name="BenzoRom/external_turbine" remote="github" revision="ninezero" />
+  <project path="external/vixl" name="external_vixl" remote="ns" revision="ninezero" />
 
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
   <project path="toolchain/binutils" name="toolchain/binutils" revision="master" />
