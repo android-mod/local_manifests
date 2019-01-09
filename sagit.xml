@@ -47,7 +47,6 @@
   <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/chromium-webview" />
-  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/external/turbine" />
 
   <remove-project name="android_bionic" />
@@ -112,7 +111,6 @@
   <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
   <project path="external/chromium-webview" name="external_chromium-webview" clone-depth="1" remote="bb" revision="ninezero" />  
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ns" revision="ninezero" />
-  <project path="external/zlib" name="external_zlib" remote="ns" revision="ninezero" />
   <project path="external/turbine" name="BenzoRom/external_turbine" remote="github" revision="ninezero" />
 
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
