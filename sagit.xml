@@ -60,6 +60,7 @@
   <remove-project name="android_build_make" />
   <remove-project name="platform/build/kati" />
   <remove-project name="android_build_soong" />
+  <remove-project name="platform/build/blueprint" />
 
   <remove-project name="OTA" />
   
@@ -78,6 +79,7 @@
     </project>
    <project path="build/kati" name="build_kati" remote="ns" revision="ninezero" />
    <project path="build/soong" name="build_soong" remote="ns" revision="p" />
+   <project path="build/blueprint" name="BenzoRom/build_blueprint" remote="github" revision="ninezero" />
 
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
