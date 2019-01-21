@@ -27,6 +27,7 @@
   <remove-project name="android_packages_apps_Gallery2" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Stk" />
+  <remove-project name="platform/packages/apps/PhoneCommon" />
   <remove-project name="android_packages_apps_Updates" />  
   <remove-project name="android_packages_services_Telecomm" />  
   <remove-project name="android_packages_services_Telephony" />  
@@ -102,8 +103,9 @@
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
   <project path="packages/apps/OpenDelta" name="packages_apps_OpenDelta" remote="ns" revision="pie" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="ns" revision="9.0" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="ns" revision="9.0" />
+  <project path="packages/apps/PhoneCommon" name="omnirom/android_packages_apps_PhoneCommon" remote="github" revision="android-9.0" />  
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ns" revision="p" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ns" revision="p" />
 
   <project path="external/expat" name="BenzoRom/external_expat" remote="github" revision="ninezero" />
   <project path="external/freetype" name="BenzoRom/external_freetype" remote="github" revision="ninezero" />
@@ -124,6 +126,6 @@
    <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
    <project path="frameworks/av" name="frameworks_av" remote="ns" revision="p" />
    <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
-   <project path="frameworks/opt/telephony" name="syberia-project/platform_frameworks_opt_telephony" remote="github" revision="9.0" />
-   <project path="frameworks/opt/net/ims" name="syberia-project/platform_frameworks_opt_net_ims" remote="github" revision="9.0" />   
+   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ns" revision="p" />
+   <project path="frameworks/opt/net/ims" name="omnirom/android_frameworks_opt_net_ims" remote="github" revision="android-9.0" />   
 </manifest>
