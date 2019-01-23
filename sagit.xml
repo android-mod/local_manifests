@@ -32,7 +32,6 @@
   <remove-project name="android_packages_services_Telecomm" />  
   <remove-project name="android_packages_services_Telephony" />  
 
-  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/jdk/jdk9" />
@@ -89,7 +88,6 @@
     <project path="kernel/xiaomi/msm8998" name="wloot/LoverOriented" remote="github" revision="lo-2.x" />    
     <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
 
-    <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" clone-depth="1" remote="gitlabwloot" revision="pie" />
     <project path="prebuilts/clang/host/linux-x86/clang-r346389" name="1582130940/android_prebuilts_clang_host_linux-x86_clang-r346389" clone-depth="1" remote="github" revision="8.1" />
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" revision="master" />    
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" revision="master" />
