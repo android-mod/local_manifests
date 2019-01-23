@@ -93,7 +93,7 @@
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" revision="master" />
     <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" clone-depth="1" remote="github" revision="ninezero" />
-    <project path="prebuilts/r8" name="platform/prebuilts/r8" clone-depth="1" revision="master" />
+    <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
     <project path="prebuilts/go/linux-x86" name="BenzoRom/prebuilts_go_linux-x86" remote="github" clone-depth="1" revision="ninezero" />
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
