@@ -95,6 +95,7 @@
     <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" clone-depth="1" remote="github" revision="ninezero" />
     <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
     <project path="prebuilts/go/linux-x86" name="BenzoRom/prebuilts_go_linux-x86" remote="github" clone-depth="1" revision="ninezero" />
+    <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="BenzoRom/prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="github" revision="ninezero" />
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
