@@ -20,6 +20,7 @@
   <remove-project name="android_hardware_qcom_audio-caf-msm8996" />
   <remove-project name="android_hardware_qcom_display-caf-msm8996" />
   <remove-project name="android_hardware_qcom_media-caf-msm8996" />
+  <remove-project name="android_hardware_ril" />
 
   <remove-project name="platform/packages/apps/ExactCalculator" />
   <remove-project name="platform/packages/apps/Email" />
@@ -124,6 +125,7 @@
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
   <project path="toolchain/binutils" name="toolchain/binutils" revision="master" />
   <project path="system/libhwbinder" name="BenzoRom/system_libhwbinder" remote="github" revision="ninezero" />
+  <project path="hardware/ril" name="omnirom/android_hardware_ril" remote="github" revision="android-9.0" />
 
    <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
    <project path="frameworks/av" name="frameworks_av" remote="ns" revision="p" />
