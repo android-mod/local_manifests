@@ -106,6 +106,7 @@
   <project path="packages/apps/PhoneCommon" name="omnirom/android_packages_apps_PhoneCommon" remote="github" revision="android-9.0" />  
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ns" revision="p" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ns" revision="p" />
+  <project path="packages/apps/Stk" name="omnirom/android_packages_apps_Stk" remote="github" revision="android-9.0" />
 
   <project path="external/expat" name="BenzoRom/external_expat" remote="github" revision="ninezero" />
   <project path="external/freetype" name="BenzoRom/external_freetype" remote="github" revision="ninezero" />
