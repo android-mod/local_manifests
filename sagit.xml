@@ -20,7 +20,6 @@
   <remove-project name="android_hardware_qcom_audio-caf-msm8996" />
   <remove-project name="android_hardware_qcom_display-caf-msm8996" />
   <remove-project name="android_hardware_qcom_media-caf-msm8996" />
-  <remove-project name="android_hardware_ril" />
 
   <remove-project name="platform/packages/apps/ExactCalculator" />
   <remove-project name="platform/packages/apps/Email" />
@@ -28,29 +27,14 @@
   <remove-project name="android_packages_apps_Gallery2" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Stk" />
-  <remove-project name="platform/packages/apps/PhoneCommon" />
   <remove-project name="android_packages_apps_Updates" />  
-  <remove-project name="android_packages_services_Telecomm" />  
-  <remove-project name="android_packages_services_Telephony" />  
 
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/jdk/jdk9" />
   <remove-project name="android_prebuilts_build-tools" />
   <remove-project name="platform/prebuilts/r8" />
-  <remove-project name="platform/prebuilts/go/linux-x86" />
 
-  <remove-project name="platform/external/expat" />
-  <remove-project name="platform/external/freetype" />
-  <remove-project name="platform/external/jemalloc" />
-  <remove-project name="platform/external/libjpeg-turbo" />
-  <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/chromium-webview" />
-  <remove-project name="platform/external/turbine" />
-  <remove-project name="platform/external/libxml2" />
-  <remove-project name="platform/external/skqp" />
 
   <remove-project name="android_bionic" />
   
@@ -58,18 +42,11 @@
   <remove-project name="android_frameworks_av" />
   <remove-project name="android_frameworks_base" />
   <remove-project name="android_frameworks_opt_telephony" />
-  <remove-project name="platform/frameworks/opt/net/ims" />
 
   <remove-project name="android_build_make" />
-  <remove-project name="platform/build/kati" />
   <remove-project name="android_build_soong" />
-  <remove-project name="platform/build/blueprint" />
 
   <remove-project name="OTA" />
-  
- <remove-project name="toolchain/binutils" />  
-
-  <remove-project name="platform/system/libhwbinder" />
 
     <project path="build/make" name="build_make" remote="ns" revision="p" >
         <copyfile src="core/root.mk" dest="Makefile" />
@@ -80,10 +57,8 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-   <project path="build/kati" name="build_kati" remote="ns" revision="ninezero" />
    <project path="build/soong" name="build_soong" remote="ns" revision="p" />
-   <project path="build/blueprint" name="BenzoRom/build_blueprint" remote="github" revision="ninezero" />
-
+   
     <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
     <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
     <project path="vendor/xiaomi" name="vendor_xiaomi" remote="wloot" revision="pie" />
@@ -91,45 +66,25 @@
     <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
 
     <project path="prebuilts/clang/host/linux-x86/clang-r346389" name="1582130940/android_prebuilts_clang_host_linux-x86_clang-r346389" clone-depth="1" remote="github" revision="8.1" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" revision="master" />    
-    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" revision="master" />
-    <project path="prebuilts/jdk/jdk9" name="platform/prebuilts/jdk/jdk9" groups="pdk" clone-depth="1" revision="master" />
     <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" clone-depth="1" remote="github" revision="ninezero" />
     <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
-    <project path="prebuilts/go/linux-x86" name="BenzoRom/prebuilts_go_linux-x86" remote="github" clone-depth="1" revision="ninezero" />
-    <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" revision="master" />
 
     <project path="manifest" name="android_manifest" remote="nos" revision="p" />
     <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
   <project path="packages/apps/OpenDelta" name="packages_apps_OpenDelta" remote="ns" revision="pie" />
-  <project path="packages/apps/PhoneCommon" name="omnirom/android_packages_apps_PhoneCommon" remote="github" revision="android-9.0" />  
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ns" revision="p" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ns" revision="p" />
   <project path="packages/apps/Stk" name="omnirom/android_packages_apps_Stk" remote="github" revision="android-9.0" />
 
-  <project path="external/expat" name="BenzoRom/external_expat" remote="github" revision="ninezero" />
-  <project path="external/freetype" name="BenzoRom/external_freetype" remote="github" revision="ninezero" />
-  <project path="external/jemalloc" name="crdroidandroid/android_external_jemalloc" remote="github" revision="9.0" />
-  <project path="external/libjpeg-turbo" name="BenzoRom/external_libjpeg-turbo" remote="github" revision="ninezero" />
-  <project path="external/libpng" name="crdroidandroid/android_external_libpng" remote="github" revision="9.0" />
   <project path="external/skia" name="external_skia" remote="ns" revision="pie" />
   <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
   <project path="external/chromium-webview" name="external_chromium-webview" clone-depth="1" remote="bb" revision="ninezero" />  
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ns" revision="ninezero" />
-  <project path="external/turbine" name="BenzoRom/external_turbine" remote="github" revision="ninezero" />
-  <project path="external/libxml2" name="BenzoRom/external_libxml2" remote="github" revision="ninezero" />
-  <project path="external/skqp" name="BenzoRom/external_skqp" remote="github" revision="ninezero" />
 
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
-  <project path="toolchain/binutils" name="toolchain/binutils" revision="master" />
-  <project path="system/libhwbinder" name="BenzoRom/system_libhwbinder" remote="github" revision="ninezero" />
-  <project path="hardware/ril" name="omnirom/android_hardware_ril" remote="github" revision="android-9.0" />
 
    <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
    <project path="frameworks/av" name="frameworks_av" remote="ns" revision="p" />
    <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
    <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ns" revision="p" />
-   <project path="frameworks/opt/net/ims" name="omnirom/android_frameworks_opt_net_ims" remote="github" revision="android-9.0" />   
 </manifest>
