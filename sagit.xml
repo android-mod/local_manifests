@@ -27,10 +27,9 @@
   <remove-project name="android_packages_apps_Gallery2" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Stk" />
-  <remove-project name="android_packages_apps_Updates" />  
- <remove-project name="android_packages_apps_SmartNavSettings" />  
- <remove-project name="android_packages_apps_Settings" />  
- <remove-project name="android_packages_apps_NitrogenSettings" />  
+  <remove-project name="android_packages_apps_Updates" />
+  <remove-project name="android_packages_apps_Settings" />
+  <remove-project name="android_packages_apps_NitrogenSettings" />
 
   <remove-project name="android_prebuilts_build-tools" />
   <remove-project name="platform/prebuilts/r8" />
@@ -38,6 +37,7 @@
   <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/turbine" />
 
   <remove-project name="android_bionic" />
   
@@ -51,7 +51,7 @@
 
   <remove-project name="OTA" />
 
-    <project path="build/make" name="build_make" remote="ns" revision="p" >
+  <project path="build/make" name="build_make" remote="ns" revision="p" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -60,38 +60,38 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-   <project path="build/soong" name="build_soong" remote="ns" revision="p" />
+  <project path="build/soong" name="build_soong" remote="ns" revision="p" />
    
-    <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
-    <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
-    <project path="vendor/xiaomi" name="vendor_xiaomi" remote="wloot" revision="pie" />
-    <project path="kernel/xiaomi/msm8998" name="wloot/LoverOriented" remote="github" revision="lo-2.x" />    
-    <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
+  <project path="device/xiaomi/sagit" name="device_xiaomi_sagit" remote="wloot" revision="pie-re" />
+  <project path="device/xiaomi/msm8998-common" name="device_xiaomi_msm8998-common" remote="wloot" revision="pie-re" />
+  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="wloot" revision="pie" />
+  <project path="kernel/xiaomi/msm8998" name="wloot/LoverOriented" remote="github" revision="lo-2.x" />
+  <project path="vendor/goodies" name="vendor_goodies" remote="wloot" revision="pie" />
 
-    <project path="prebuilts/clang/host/linux-x86/clang-r346389" name="1582130940/android_prebuilts_clang_host_linux-x86_clang-r346389" clone-depth="1" remote="github" revision="8.1" />
-    <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" clone-depth="1" remote="github" revision="ninezero" />
-    <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r346389" name="1582130940/android_prebuilts_clang_host_linux-x86_clang-r346389" clone-depth="1" remote="github" revision="8.1" />
+  <project path="prebuilts/build-tools" name="BenzoRom/prebuilts_build-tools" clone-depth="1" remote="github" revision="ninezero" />
+  <project path="prebuilts/r8" name="BenzoRom/prebuilts_r8" remote="github" clone-depth="1" revision="ninezero" />
 
-    <project path="manifest" name="android_manifest" remote="nos" revision="p" />
-    <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
+  <project path="manifest" name="android_manifest" remote="nos" revision="p" />
+  <project path="manifest/sagit" name="local_manifests" remote="ns" revision="pie" />
 
   <project path="packages/apps/Messaging" name="DirtyUnicorns/android_packages_apps_Messaging" remote="github" revision="p9x" />
   <project path="packages/apps/OpenDelta" name="packages_apps_OpenDelta" remote="ns" revision="pie" />
   <project path="packages/apps/Stk" name="omnirom/android_packages_apps_Stk" remote="github" revision="android-9.0" />
 
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ns" revision="p" />
-  <project path="packages/apps/SmartNavSettings" name="android_packages_apps_SmartNavSettings" remote="ns" revision="p" />
   <project path="packages/apps/NitrogenSettings" name="android_packages_apps_NitrogenSettings" remote="ns" revision="p" />
 
   <project path="external/skia" name="external_skia" remote="ns" revision="pie" />
   <project path="external/sqlite" name="BenzoRom/external_sqlite" remote="github" revision="ninezero" />
-  <project path="external/chromium-webview" name="external_chromium-webview" clone-depth="1" remote="bb" revision="ninezero" />  
-  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="ns" revision="ninezero" />
+  <project path="external/chromium-webview" name="external_chromium-webview" clone-depth="1" remote="bb" revision="ninezero" />
+  <project path="external/arm-optimized-routines" name="BenzoRom/external_arm-optimized-routines" remote="github" revision="ninezero" />
+  <project path="external/turbine" name="BenzoRom/external_turbine" remote="github" revision="ninezero" />
 
   <project path="bionic" name="bionic" remote="ns" revision="pie" />
 
-   <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
-   <project path="frameworks/av" name="frameworks_av" remote="ns" revision="p" />
-   <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
-   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ns" revision="p" />
+  <project path="frameworks/native" name="frameworks_native" remote="ns" revision="pie" />
+  <project path="frameworks/av" name="frameworks_av" remote="ns" revision="p" />
+  <project path="frameworks/base" name="frameworks_base" remote="ns" revision="p-1001" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ns" revision="p" />
 </manifest>
