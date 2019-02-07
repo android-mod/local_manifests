@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="nos"
+        revision="p"
+        fetch="https://github.com/nitrogen-project"
+        sync-j="16" />
+
+    <remote name="mod"
+        revision="du-p"    
+        fetch="https://github.com/android-mod"
+        sync-j="16" />
+
+  <remote name="los"
+        revision="lineage-16.0"  
+        fetch="https://github.com/LineageOS"
+        sync-j="16" />
+
+  <remote name="benzo"
+        revision="ninezero"
+        fetch="https://github.com/BenzoRom"
+        sync-j="16" />
+
+    <remote name="wloot"
+        revision="p"
+        fetch="https://github.com/wloot"
+        sync-j="16" />
+
+  <remove-project name="android_prebuilts_build-tools" />
+  <remove-project name="platform/prebuilts/r8" />
+
+  <remove-project name="platform/external/skia" />
+  <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/turbine" />
+
+  <remove-project name="android_frameworks_native" />
+  <remove-project name="android_frameworks_base" />
+  <remove-project name="android_bionic" />
+  <remove-project name="android_frameworks_av" />
+  <remove-project name="android_build" />
+  <remove-project name="android_build_soong" />
+
+  <remove-project name="android_device_qcom_sepolicy" />
+
+  
+  <remove-project name="android_hardware_qcom_display" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="du" revision="p9x-caf" />
+
+  <project path="build/make" name="build_make" remote="mod"  >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+  <project path="build/soong" name="build_soong" remote="mod" />
+   
+  <project path="device/xiaomi/sagit" name="sagit" remote="wloot" />
+  <project path="device/xiaomi/msm8998-common" name="msm8998-common" remote="wloot" />
+  <project path="vendor/xiaomi" name="xiaomi" remote="wloot"  />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="nos" />
+  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display" remote="mod" />
+
+    <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="nos" />
+    <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="nos" />
+    <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="nos" />
+
+   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="nos" />
+   <project path="vendor/pixelgapps" name="DirtyUnicorns/android_vendor_pixelgapps" remote="gitlab" revision="p9x" clone-depth="1" />
+   <project path="vendor/MiuiCamera" name="MiuiCamera" remote="wloot" revision="p" />
+
+  <project path="prebuilts/build-tools" name="prebuilts_build-tools" clone-depth="1" remote="benzo" />
+  <project path="prebuilts/r8" name="prebuilts_r8" remote="benzo" clone-depth="1" />
+
+  <project path="external/skia" name="external_skia" remote="mod" />
+  <project path="external/sqlite" name="external_sqlite" remote="benzo" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" clone-depth="1" remote="los" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="benzo" />
+  <project path="external/turbine" name="external_turbine" remote="benzo" />
+
+  <project path="bionic" name="bionic" remote="mod" />
+
+  <project path="frameworks/native" name="frameworks_native" remote="mod" />  
+  <project path="frameworks/av" name="frameworks_av" remote="mod" />  
+  <project path="frameworks/base" name="frameworks_base" remote="mod" />  
+
+</manifest>
+
